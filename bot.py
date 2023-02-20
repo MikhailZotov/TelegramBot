@@ -13,7 +13,6 @@ def main():
     bot = Updater(token=Variables.token)
     dp = bot.dispatcher
     dp.add_handler(CommandHandler('start', on_start_command))
-    dp.add_handler(CommandHandler('begin', on_start_command))
 
     bot.start_polling()
     bot.idle()
